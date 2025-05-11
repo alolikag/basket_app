@@ -1,0 +1,164 @@
+.basket-main-layout {
+    display: flex;
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    align-items: flex-start;
+}
+
+.cart-section {
+    flex: 2;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 2rem;
+}
+
+.item-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 1.5rem 0;
+    &:last-child { border-bottom: none; }
+}
+
+.item-img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.item-name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.item-price {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.item-offer {
+    font-size: 0.95rem;
+    color: #e74c3c;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.item-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.control-btn {
+    background: #f4f6fb;
+    color: #222;
+    border: 1px solid #dbe2ef;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, border 0.2s;
+    &:hover {
+        background: #e3e9f7;
+        border: 1px solid #bfc9d9;
+    }
+}
+
+.quantity {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    min-width: 2rem;
+    text-align: center;
+}
+
+.summary-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.summary-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.summary-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: #222;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 1.5rem;
+}
+
+.summary-total {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 0.9rem 0;
+    background: #5271ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 1rem;
+    &:hover {
+        background: #3956c4;
+    }
+}
+
+.savings {
+  color: green;
+  font-weight: bold;
+}
+  

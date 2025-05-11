@@ -1,0 +1,37 @@
+<div class="basket-main-layout">
+  <div class="cart-section">
+    <h2 class="title">Your Shopping Basket</h2>
+    <div *ngFor="let item of items" class="item-row">
+      <img class="item-img" [src]="itemImages[item]" [alt]="item" />
+      <div class="item-details">
+        <div class="item-title-row">
+          <span class="item-name">{{ item }}</span>
+          <span class="item-price">£{{ itemPrice[item] / 100 }}</span>
+        </div>
+        <div class="item-offer" *ngIf="item === 'Melon'">Buy one get one free</div>
+        <div class="item-offer" *ngIf="item === 'Lime'">3 for the price of 2</div>
+        <div class="item-controls">
+          <button class="control-btn" (click)="removeItem(item)">-</button>
+          <span class="quantity">{{ basket[item] }}</span>
+          <button class="control-btn" (click)="addItem(item)">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="summary-card">
+  <h3>Summary</h3>
+  <div class="summary-row">
+    <span>Original Price</span>
+    <span>{{ originalPrice }}</span>
+  </div>
+  <div class="summary-row" *ngIf="savings !== '£0.00'">
+    <span>You Save</span>
+    <span class="savings">{{ savings }}</span>
+  </div>
+  <div class="summary-row">
+    <span>Final Price</span>
+    <span class="summary-total">{{ discountedPrice }}</span>
+  </div>
+  <button class="checkout-btn">Checkout</button>
+</div>
+</div>
